@@ -36,3 +36,5 @@ jobs:
         git add version.txt
         git commit -m "Atualiza para versão $new_version"
         git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
